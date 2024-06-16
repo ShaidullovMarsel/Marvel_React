@@ -1,4 +1,5 @@
 import { Component } from 'react';
+import Spinner from '../spinner/Spinner';
 import MarvelService from '../../services/MarvelService';
 import './randomChar.scss';
 import mjolnir from '../../resources/img/mjolnir.png';
@@ -10,7 +11,8 @@ class RandomChar extends Component {
     }
 
     state = {
-        char: {}
+        char: {},
+        loading: true
     }
 
      marvelService = new MarvelService();
@@ -19,16 +21,19 @@ class RandomChar extends Component {
         this.setState({char});
     }
 
-     updateChar = () => {
+    updateChar = () => {
         const id = Math.floor(Math.random() * (1011400 - 1011100) + 1011100);
         this.marvelService
             .getCharacter(id)
             .then(this.onCharLoaded)
-     }
-
+    }
 
     render() {
-        const {char: {name, description, thumbnail, homepage, wiki}} = this.state;
+        const {char: {name, description, thumbnail, homepage, wiki}, loading} = this.state;
+
+        if (loading) {
+            <Spinner/>
+        }
         return (
             <div className="randomchar">
                 <div className="randomchar__block">
