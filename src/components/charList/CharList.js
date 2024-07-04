@@ -73,7 +73,7 @@ const CharList = (props) => {
                             focusOnItem(i);
                         }
                     }}>
-                        <img src={item.thumbnail} alt={item.name} style={imgStyle}/>
+                        <img src={item.thumbnail} alt={item.title} style={imgStyle}/>
                         <div className="char__name">{item.name}</div>
                 </li>
             )
