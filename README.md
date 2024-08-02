@@ -10,7 +10,7 @@
 ## Запуск проекта:
 * Склонировать проект на ваш компьютер с Github с помощью команды:
 ```
-git clone https://github.com/joker325713/Uber.git
+https://github.com/ShaidullovMarsel/Marvel_React.git
 ```
 
 * Установить зависимости с помощью команды:
