@@ -5,9 +5,8 @@
 ![JavaScript](https://img.shields.io/badge/-JavaScript-f7df1e?logo=javaScript&logoColor=black)
 ![Webpack](https://img.shields.io/badge/-Webpack-99d6f8?logo=webpack&logoColor=black)
 ## Превью:
-![](Marvel_React
-/Pasted Graphic 1.png
-)
+![](/Pasted Graphic 1.png)
+
 ## Запуск проекта:
 * Склонировать проект на ваш компьютер с Github с помощью команды:
 ```
